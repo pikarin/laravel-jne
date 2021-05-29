@@ -1,0 +1,47 @@
+{
+    "name": "aditia/laravel-jne",
+    "description": "Simple JNE api wrapper for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "M. Aditia Firmansyah",
+            "email": "aditia.pikarin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "guzzlehttp/guzzle": "^6.5.5|^7.0.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aditia\\Jne\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aditia\\Jne\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aditia\\Jne\\Providers\\JneServiceProvider"
+            ],
+            "aliases": {
+                "JNE": "Aditia\\Jne\\Facades\\Jne"
+            }
+        }
+    }
+}
