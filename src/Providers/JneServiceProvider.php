@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Support\DeferrableProvider;
 
-class JneServiceProvider extends ServiceProvider implements DeferrableProvider
+class JneServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -26,7 +26,7 @@ class JneServiceProvider extends ServiceProvider implements DeferrableProvider
         });
 
         $this->publishes([
-            __DIR__.'/../../config/jbe.php' => config_path('courier.php'),
+            __DIR__.'/../../config/jne.php' => config_path('jne.php'),
         ]);
 
         $this->mergeConfigFrom(__DIR__ . '/../../config/jne.php', 'jne');
