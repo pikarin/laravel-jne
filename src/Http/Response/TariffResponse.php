@@ -6,6 +6,10 @@ use Aditia\Jne\Http\Response\Tariff\Price;
 use Aditia\Jne\Http\Response\Factory as ResponseFactory;
 use Illuminate\Support\Collection;
 
+/**
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tariff\Price> $price
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tariff\Price> $prices
+ */
 class TariffResponse extends ResponseFactory
 {
     public function price($value): Collection

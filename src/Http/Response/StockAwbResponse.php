@@ -6,6 +6,9 @@ use Aditia\Jne\Http\Response\AWB\Awb;
 use Aditia\Jne\Http\Response\Factory as ResponseFactory;
 use Illuminate\Support\Collection;
 
+/**
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\AWB\Awb> $awb
+ */
 class StockAwbResponse extends ResponseFactory
 {
     public function awb($value): Collection

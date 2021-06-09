@@ -5,6 +5,10 @@ namespace Aditia\Jne\Http\Response;
 use Aditia\Jne\Http\Response\AWB\Awb;
 use Aditia\Jne\Http\Response\Factory as ResponseFactory;
 
+/**
+ * @property \Aditia\Jne\Http\Response\AWB\Awb $detail
+ * @property \Aditia\Jne\Http\Response\AWB\Awb $awb
+ */
 class GenerateAwbResponse extends ResponseFactory
 {
     public function detail($value)

@@ -2,7 +2,6 @@
 
 namespace Aditia\Jne\Http;
 
-use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
 use Aditia\Jne\Http\Response\TariffResponse;

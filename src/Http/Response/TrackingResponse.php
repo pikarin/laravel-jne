@@ -8,6 +8,14 @@ use Aditia\Jne\Http\Response\Tracking\Detail;
 use Aditia\Jne\Http\Response\Tracking\History;
 use Aditia\Jne\Http\Response\Factory as ResponseFactory;
 
+/**
+ * @property \Aditia\Jne\Http\Response\Tracking\Cnote|null $cnote
+ * @property \Aditia\Jne\Http\Response\Tracking\Detail|null $detail
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tracking\Detail> $details
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tracking\Detail> $details
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tracking\History> $history
+ * @property \Illuminate\Support\Collection<\Aditia\Jne\Http\Response\Tracking\History> $histories
+ */
 class TrackingResponse extends ResponseFactory
 {
     public function cnote($value): Cnote
